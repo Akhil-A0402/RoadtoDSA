@@ -16,6 +16,8 @@ public class Kadanes{
         }
         return sum;
     }
+
+    // Note: The sum returned might be negative if all the values in array are negative. So if needed apply a condition to check and return 0 for positive subarray case.
     public static void main(String[] args){
         int[] arr = {1, -2,-3, 4, -1, 2, 1};
         System.out.println(Kadanes.kadanesFunction(arr)); 
