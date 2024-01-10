@@ -23,8 +23,8 @@ public class CheckPermutation {
 
         int[] letters = new int[128];
 
-        char[] orginal_array = original.toCharArray();
-        for(char c: orginal_array){
+        char[] original_array = original.toCharArray();
+        for(char c: original_array){
             letters[c]++;
         }
 
@@ -39,10 +39,10 @@ public class CheckPermutation {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String orginal = sc.nextLine();
+        String original = sc.nextLine();
         String check = sc.nextLine();
-        System.out.println(checkPermutation(orginal, check)?"Yes": "No");
-        System.out.println(checkPermutation2(orginal, check)?"Yes": "No");
-
+        System.out.println(checkPermutation(original, check)?"Yes": "No");
+        System.out.println(checkPermutation2(original, check)?"Yes": "No");
+        sc.close();
     }
 }
