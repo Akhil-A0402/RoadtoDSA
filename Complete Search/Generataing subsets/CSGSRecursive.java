@@ -2,6 +2,9 @@ import java.util.ArrayList;
 
 public class CSGSRecursive {
 
+    /***
+    Topic: Complete Search - Generate Subset - Recursion
+    ***/
     public int size;
     public ArrayList<Integer> subset = new ArrayList<>();
 
