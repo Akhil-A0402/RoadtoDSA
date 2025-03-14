@@ -2,6 +2,8 @@ package LinkedList.Questions;
 
 import java.util.LinkedList;
 
+import LinkedList.ScratchImpl.LL;
+
 public class FindNthElementFromBehindAndDelete {
 
     public static LinkedList<String> removeElement(LinkedList<String> list, int n){
@@ -25,7 +27,6 @@ public class FindNthElementFromBehindAndDelete {
         System.out.println(list);
         removeElement(list, 3);
         System.out.println(list);
-        System.err.println("Testing");
 
     }
 }
