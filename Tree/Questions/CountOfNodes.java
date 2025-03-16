@@ -1,10 +1,10 @@
-package Tree.Impl;
+package Tree.Questions;
 
-public class BuildPreOrderTree {
-    public static class Node{
-        public int data;
-        public Node left;
-        public Node right;
+public class CountOfNodes {
+    static class Node{
+        int data;
+        Node left;
+        Node right;
 
         public Node(int data){
             this.data = data;
@@ -28,11 +28,25 @@ public class BuildPreOrderTree {
         }
     }
 
+
+    /*
+     * Time complexity: O(n)
+     */
+    public static int countNodes(Node node){
+        if(node==null){
+            return 0;
+        }
+        int leftNodesCount = countNodes(node.left);
+        int rightNodesCount = countNodes(node.right);
+        return leftNodesCount + rightNodesCount + 1;
+    }
+
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         int[] nodes = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         Node root = bt.buildTree(nodes);
 
-        System.out.println(root.data);
+        // System.out.println(root.data);
+        System.out.println(countNodes(root));
     }
 }
