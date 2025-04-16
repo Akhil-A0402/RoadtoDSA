@@ -63,11 +63,6 @@ public class DFS {
     
             graph[6].add(new Edge(6, 5));
     
-    
-    
-    
-    
-    
         }
     
         public static void main(String[] args) {
