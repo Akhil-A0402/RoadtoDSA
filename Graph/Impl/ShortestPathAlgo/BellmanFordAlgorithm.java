@@ -32,6 +32,8 @@ public class BellmanFordAlgorithm {
 
     }
 
+    // Time complexity : O(V.E)
+    // This doesn't work for graph with negative weight cycle
     public static void shortestPathAlgo(ArrayList<Edge> graph[], int src, int V) {
         int dist[] = new int[V];
         for(int i=0;i<V;i++) {
